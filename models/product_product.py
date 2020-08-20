@@ -11,7 +11,7 @@ class ProductProduct(models.Model):
     _inherit = 'product.product'
 
     default_code = fields.Char(
-        required=True,
+        required=False,
         default='/',
         track_visibility='onchange',
         help="Set to '/' and save if you want a new internal reference "
